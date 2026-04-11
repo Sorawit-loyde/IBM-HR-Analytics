@@ -21,3 +21,7 @@ Unlike standard static reports, this project utilizes a custom Python script (`p
 # Custom mapping for logical chart sorting
 tier_map = {'Entry': 1, 'Associate': 2, 'Lead': 3, 'Executive': 4}
 df['Tier_Rank'] = df['Income_Tier'].map(tier_map)
+
+[![Power BI Dashboard]
+(reports/dashboard.png)]
+(reports/dashboard.pdf)
