@@ -34,6 +34,10 @@ def run_automation():
     # 4. Save the Cleaned Dataset
     if not os.path.exists(os.path.dirname(output_file)):
         os.makedirs(os.path.dirname(output_file))
+    
+    # Create a numeric rank so Power BI knows the order
+    tier_map = {'Entry': 1, 'Associate': 2, 'Lead': 3, 'Executive': 4}
+    df['Tier_Rank'] = df['Income_Tier'].map(tier_map)
         
     df.to_csv(output_file, index=False)
     print(f"✅ Automation Complete! Saved to: {output_file}")
