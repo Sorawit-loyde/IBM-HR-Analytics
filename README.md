@@ -16,9 +16,7 @@ Unlike standard static reports, this project utilizes a custom Python script (`p
 2.  **Ordinal Mapping:** Implemented a `Tier_Rank` system to ensure visual charts sort logically (Entry → Executive) rather than alphabetically.
 3.  **Data Type Integrity:** Managed type conversions to ensure seamless DAX calculations (e.g., converting boolean flags to integers for SUM operations).
 
-[![Power BI Dashboard]
-(reports/dashboard.png)]
-(reports/dashboard.pdf)
+[![Power BI Dashboard](reports/dashboard.png)](reports/dashboard.pdf)
 
 ### Example Python Logic:
 ```python
